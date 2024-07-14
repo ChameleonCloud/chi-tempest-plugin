@@ -4,7 +4,7 @@ from tempest import config
 from tempest.test_discover import plugins
 
 
-class ChiTests(plugins.TempestPlugin):
+class ChiTempestPlugin(plugins.TempestPlugin):
     def load_tests(self):
         base_path = os.path.split(os.path.dirname(
             os.path.abspath(__file__)))[0]
