@@ -1,5 +1,9 @@
 from tempest import test
+from oslo_log import log as logging
+from tempest import config
 
+LOG = logging.getLogger(__name__)
+CONF = config.CONF
 
 class TestExampleCase(test.BaseTestCase):
     def test_example_create_server(self):
